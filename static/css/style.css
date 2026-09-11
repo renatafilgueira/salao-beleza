@@ -1,0 +1,709 @@
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    color: #4a2633;
+}
+
+/* Títulos */
+
+h1,
+h2 {
+    color: #c2185b;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Textos */
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* ==============================
+   PÁGINA INICIAL
+   ============================== */
+
+.inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(
+        135deg,
+        #fff5f8,
+        #fce1eb,
+        #fff
+    );
+}
+
+.conteudo-inicio {
+    max-width: 800px;
+}
+
+.subtitulo {
+    color: #c85c82;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.inicio h2 {
+    color: #7d304f;
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.descricao {
+    color: #6f5961;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.botao-principal {
+    display: inline-block;
+    background: #c85c82;
+    color: white;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-principal:hover {
+    background: #a84468;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(200, 92, 130, 0.25);
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .inicio {
+        min-height: 70vh;
+        padding: 60px 20px;
+    }
+
+    .inicio h2 {
+        font-size: 38px;
+    }
+
+    .descricao {
+        font-size: 16px;
+    }
+}
+/* ==============================
+   SOBRE NÓS
+   ============================== */
+
+.sobre {
+    padding: 100px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.sobre .subtitulo {
+    margin-bottom: 12px;
+}
+
+.sobre h2 {
+    color: #7d304f;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.sobre p:not(.subtitulo) {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #6f5961;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* Efeito delicado no título */
+
+.sobre h2::after {
+    content: "✿";
+    display: block;
+    color: #c85c82;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .sobre {
+        padding: 70px 20px;
+    }
+
+    .sobre h2 {
+        font-size: 30px;
+    }
+
+    .sobre p:not(.subtitulo) {
+        font-size: 16px;
+    }
+}
+/* ==============================
+   SERVIÇOS
+   ============================== */
+
+.servicos {
+    padding: 100px 20px;
+    text-align: center;
+    background: #fff5f8;
+}
+
+.servicos h2 {
+    color: #7d304f;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.servicos-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.servico {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(125, 48, 79, 0.08);
+    transition: 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(125, 48, 79, 0.15);
+}
+
+.servico span {
+    display: block;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.servico h3 {
+    color: #7d304f;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.servico p {
+    color: #6f5961;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE DOS SERVIÇOS
+   ============================== */
+
+@media (max-width: 900px) {
+
+    .servicos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+
+    .servicos {
+        padding: 70px 20px;
+    }
+
+    .servicos h2 {
+        font-size: 30px;
+    }
+
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+}/* ==============================
+   SERVIÇOS
+   ============================== */
+
+.servicos {
+    padding: 100px 20px;
+    text-align: center;
+    background: #fff5f8;
+}
+
+.servicos h2 {
+    color: #7d304f;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.servicos-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.servico {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(125, 48, 79, 0.08);
+    transition: 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(125, 48, 79, 0.15);
+}
+
+.servico span {
+    display: block;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.servico h3 {
+    color: #7d304f;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.servico p {
+    color: #6f5961;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE DOS SERVIÇOS
+   ============================== */
+
+@media (max-width: 900px) {
+
+    .servicos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+
+    .servicos {
+        padding: 70px 20px;
+    }
+
+    .servicos h2 {
+        font-size: 30px;
+    }
+
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* ==============================
+   CONTATO / AGENDAMENTO
+   ============================== */
+
+.contato {
+    padding: 100px 20px;
+    text-align: center;
+    background: #7d304f;
+}
+
+.contato .subtitulo {
+    color: #f8c5d6;
+}
+
+.contato h2 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contato p:not(.subtitulo) {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #fce8ef;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contato .botao-principal {
+    background: #ffffff;
+    color: #7d304f;
+}
+
+.contato .botao-principal:hover {
+    background: #fce1eb;
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   RODAPÉ
+   ============================== */
+
+footer {
+    padding: 25px 20px;
+    text-align: center;
+    background: #5e243b;
+}
+
+footer p {
+    margin: 0;
+    color: #fce8ef;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .contato {
+        padding: 70px 20px;
+    }
+
+    .contato h2 {
+        font-size: 32px;
+    }
+
+    .contato p:not(.subtitulo) {
+        font-size: 16px;
+    }
+}
+/* ==============================
+   CABEÇALHO
+   ============================== */
+
+.cabecalho {
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(125, 48, 79, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    color: #c85c82;
+    font-size: 32px;
+}
+
+.logo h1 {
+    color: #7d304f;
+    font-size: 25px;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu a {
+    color: #6f5961;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c85c82;
+}
+
+
+/* BOTÃO AGENDAR */
+
+.botao-agendar {
+    background: #c85c82;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-agendar:hover {
+    background: #a84468;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(200, 92, 130, 0.25);
+}
+
+
+/* ==============================
+   CABEÇALHO NO CELULAR
+   ============================== */
+
+@media (max-width: 850px) {
+
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 18px 20px;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px 22px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .logo span {
+        font-size: 27px;
+    }
+
+    .botao-agendar {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+}
+/* Rolagem suave pelo menu */
+html {
+    scroll-behavior: smooth;
+}/* Rolagem suave pelo menu */
+
+/* ==============================
+   ANIMAÇÕES DELICADAS
+   ============================== */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.conteudo-inicio {
+    animation: aparecer 1s ease-out;
+}
+
+.inicio .subtitulo {
+    animation: aparecer 0.8s ease-out;
+}
+
+.inicio h2 {
+    animation: aparecer 1s ease-out;
+}
+
+.inicio .descricao {
+    animation: aparecer 1.2s ease-out;
+}
+
+.inicio .botao-principal {
+    animation: aparecer 1.4s ease-out;
+}
+/* Efeito suave nos botões */
+.botao-principal,
+.botao-agendar {
+    transition: all 0.3s ease;
+}
+
+.botao-principal:hover,
+.botao-agendar:hover {
+    transform: translateY(-3px);
+}
+
+/* ==============================
+   VERSÃO PARA CELULAR
+   ============================== */
+
+@media (max-width: 600px) {
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        padding: 15px 18px;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    .logo span {
+        font-size: 28px;
+    }
+
+    .botao-agendar {
+        display: none;
+    }
+
+    /* MENU */
+
+    .menu {
+        width: 100%;
+        gap: 12px 18px;
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
+    /* INÍCIO */
+
+    .inicio {
+        min-height: 75vh;
+        padding: 60px 18px;
+    }
+
+    .inicio h2 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .descricao {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .botao-principal {
+        padding: 14px 25px;
+        font-size: 14px;
+    }
+
+
+    /* SOBRE */
+
+    .sobre {
+        padding: 70px 18px;
+    }
+
+    .sobre h2 {
+        font-size: 29px;
+    }
+
+    .sobre p:not(.subtitulo) {
+        font-size: 16px;
+    }
+
+
+    /* SERVIÇOS */
+
+    .servicos {
+        padding: 70px 18px;
+    }
+
+    .servicos h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .servicos-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .servico {
+        padding: 30px 20px;
+    }
+
+
+    /* CONTATO */
+
+    .contato {
+        padding: 70px 18px;
+    }
+
+    .contato h2 {
+        font-size: 31px;
+    }
+
+    .contato p:not(.subtitulo) {
+        font-size: 16px;
+    }
+
+
+    /* RODAPÉ */
+
+    footer {
+        padding: 22px 15px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
