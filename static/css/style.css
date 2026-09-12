@@ -553,6 +553,40 @@ html {
     color: #c2185b;
     cursor: pointer;
 }
+.botao-mensagem {
+    display: inline-block;
+    margin-top: 15px;
+    background: #d81b60;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-mensagem:hover {
+    background: #ad1457;
+    transform: translateY(-3px);
+}
+.botao-mensagem {
+    display: inline-block;
+    margin-top: 15px;
+    background: #d81b60;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-mensagem:hover {
+    background: #ad1457;
+    transform: translateY(-3px);
+}
 /* ==============================
    VERSÃO PARA CELULAR
    ============================== */
